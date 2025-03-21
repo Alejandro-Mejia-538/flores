@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores para Ti</title>
+    <style>
+        body {
+            background-color: #fff5f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #e60073;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #444;
+        }
+        .flowers {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .flower {
+            width: 120px;
+            height: 120px;
+            background-size: cover;
+            animation: bloom 2s infinite alternate;
+        }
+        @keyframes bloom {
+            from { transform: scale(0.8); }
+            to { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <h1>🌸 Para la enfermera más bonita, Vale 🌻</h1>
+    <p>No puedo verte ahora, pero estas flores son para ti 💖</p>
+    <div class="flowers">
+        <div class="flower" style="background-image: url('https://i.imgur.com/FlVHz64.png');"></div>
+        <div class="flower" style="background-image: url('https://i.imgur.com/7XZOK0I.png');"></div>
+        <div class="flower" style="background-image: url('https://i.imgur.com/QKj9h4O.png');"></div>
+        <div class="flower" style="background-image: url('https://i.imgur.com/tM3aBZI.png');"></div>
+        <div class="flower" style="background-image: url('https://i.imgur.com/7XZOK0I.png');"></div>
+    </div>
+</body>
+</html>
