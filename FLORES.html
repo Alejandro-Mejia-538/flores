@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores para Ti</title>
+    <style>
+        body {
+            background-color: #fff5f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #e60073;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #444;
+        }
+        .flowers {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .flower img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            animation: bloom 2s infinite alternate;
+        }
+        @keyframes bloom {
+            from { transform: scale(0.8); }
+            to { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <h1>🌸 Para la enfermera más bonita, Vale 🌻</h1>
+    <p>No puedo verte hoy, pero estas flores son para ti, niña de sonrisa bonita 💖</p>
+    <div class="flowers">
+        <div class="flower"><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Rosa_Red_Chateau01.jpg" alt="Rosa Roja"></div>
+        <div class="flower"><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Sunflower_from_Silesia2.jpg" alt="Girasol"></div>
+        <div class="flower"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Pink_rose_flower.jpg" alt="Rosa Rosa"></div>
+        <div class="flower"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Yellow_rose.jpg" alt="Rosa Amarilla"></div>
+    </div>
+</body>
+</html>
